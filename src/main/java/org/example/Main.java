@@ -34,11 +34,9 @@ public class Main {
         user2.getBasket().addProductInBasket(notebooks4);
         user2.getBasket().printBuyProduct();
 
-//        smartphone.printAll();
-//        System.out.println("==============");
-//        notebooks.printAll();
-
-
-
+        smartphone.printAll();
+        System.out.println("==============");
+        notebooks.printAll();
+        
     }
 }
