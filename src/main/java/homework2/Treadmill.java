@@ -1,7 +1,14 @@
 package homework2;
 
-public class Treadmill {
-    private final int MIN_LENGTH = 100;
-    private final int MAX_LENGTH = 1000;
+class Treadmill {
+    private int length;
 
+    public Treadmill(int length) {
+        this.length = length;
+    }
+
+    public void overcome(Participant participant) {
+        participant.run(length);
+    }
 }
+
