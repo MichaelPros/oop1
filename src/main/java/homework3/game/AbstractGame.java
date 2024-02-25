@@ -49,6 +49,7 @@ public abstract class AbstractGame implements Game {
         else if(maxTry == 0){
             status = GameStatus.END;
         }
+        history = new HistoryGame();
         history.addActions((String)("Попытка: " + value + ", результат: " + countCow + " коровы, " + countBull + " быка"));
 
         return new Answer(maxTry, countBull, countCow);
